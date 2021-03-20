@@ -1,0 +1,6 @@
+<select [(ngModel)]="id" class="select">
+    <option *ngFor="let item of data" [value]="item.id">{{item.nm_usuario}}</option>
+</select>
+<button class='btn btn-danger' (click)="deletar()">Deletar</button>
+
+
