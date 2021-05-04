@@ -9,17 +9,17 @@ export class RestService {
   constructor(private http:HttpClient) { }
 
   getData(){
-    let url = "http://localhost:8080/usuario";
+    let url = "https://crud-jvg.herokuapp.com/usuario";
     return this.http.get(url);
   }
 
   postData(json:any){
-    let url = "http://localhost:8080/usuario";
+    let url = "https://crud-jvg.herokuapp.com/usuario";
     return this.http.post(url, json);
   }
 
   deleteData(id:any){
-    let url = "http://localhost:8080/usuario/" + id
+    let url = "https://crud-jvg.herokuapp.com/usuario/" + id
     return this.http.delete(url)
   }
 }
