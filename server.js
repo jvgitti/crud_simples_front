@@ -3,7 +3,7 @@ const path = require('path');
 
 const app = express();
 
-app.use(express.static(__dirname + '/dist/front-crud-jvg'));
+app.use(express.static(__dirname + '/dist/teste'));
 
 app.get('/*', (req,res,next) => {
     res.sendFile(path.join(__dirname + '/dist/dictionary/index.html'));
