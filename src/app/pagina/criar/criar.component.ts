@@ -10,16 +10,16 @@ export class CriarComponent {
 
 
   nome = ''
-  email = ''
+  senha = ''
   json:any = []
 
   criar(){
-    this.json = {"nm_usuario":this.nome, "email_usuario":this.email}
+    this.json = {"nm_usuario":this.nome, "senha_usuario":this.senha}
     this.user.postData(this.json).subscribe(data=>{
       console.warn(data)
     })
     this.nome = ''
-    this.email = ''
+    this.senha = ''
   }
 
   constructor(private user: RestService) {
